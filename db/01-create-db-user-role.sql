@@ -1,6 +1,22 @@
+<<<<<<< HEAD
 $ sudo su - postgres
 $ psql 
                                                                 
+=======
+--Kullanıcıları Oluştur
+
+localhost
+-------------------------------------------------------------------
+u_harcama          PG-lh--db_harcama--u_harcama
+
+ALTER USER postgres   WITH PASSWORD 'kHcLeE42!';
+
+$ sudo su - postgres
+$ psql 
+
+ALTER USER postgres   WITH PASSWORD 'kHcLeE42!';
+                                                                      
+>>>>>>> dev-asg
 Create Role u_harcama 	with login CREATEDB CREATEROLE encrypted password 'kHcLeE42!';
 ALTER USER u_harcama 	SET timezone = 'Europe/Istanbul';
 ALTER USER u_harcama   WITH PASSWORD 'kHcLeE42!';
