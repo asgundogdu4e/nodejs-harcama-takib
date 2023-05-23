@@ -4,16 +4,16 @@ localhost
 -------------------------------------------------------------------
 u_harcama          PG-lh--db_harcama--u_harcama
 
-ALTER USER postgres   WITH PASSWORD 'sGg!54cU*';
+ALTER USER postgres   WITH PASSWORD 'kHcLeE42!';
 
 $ sudo su - postgres
 $ psql 
 
-ALTER USER postgres   WITH PASSWORD 'sGg!54cU*';
+ALTER USER postgres   WITH PASSWORD 'kHcLeE42!';
                                                                       
-Create Role u_harcama 	with login CREATEDB CREATEROLE encrypted password 'sGg!54cU*';
+Create Role u_harcama 	with login CREATEDB CREATEROLE encrypted password 'kHcLeE42!';
 ALTER USER u_harcama 	SET timezone = 'Europe/Istanbul';
-ALTER USER u_harcama   WITH PASSWORD 'sGg!54cU*';
+ALTER USER u_harcama   WITH PASSWORD 'kHcLeE42!';
 
 
 CREATE DATABASE db_harcama 
