@@ -1,19 +1,9 @@
---Kullanıcıları Oluştur
-
-localhost
--------------------------------------------------------------------
-u_harcama          PG-lh--db_harcama--u_harcama
-
-ALTER USER postgres   WITH PASSWORD 'sGg!54cU*';
-
 $ sudo su - postgres
 $ psql 
-
-ALTER USER postgres   WITH PASSWORD 'sGg!54cU*';
-                                                                      
-Create Role u_harcama 	with login CREATEDB CREATEROLE encrypted password 'sGg!54cU*';
+                                                                
+Create Role u_harcama 	with login CREATEDB CREATEROLE encrypted password 'kHcLeE42!';
 ALTER USER u_harcama 	SET timezone = 'Europe/Istanbul';
-ALTER USER u_harcama   WITH PASSWORD 'sGg!54cU*';
+ALTER USER u_harcama   WITH PASSWORD 'kHcLeE42!';
 
 
 CREATE DATABASE db_harcama 
@@ -44,7 +34,7 @@ SELECT count(*) FROM pg_stat_activity WHERE datname is not null;
 SELECT * FROM pg_stat_database WHERE datname is not null
 ;
 SELECT client_addr, count(*) FROM pg_stat_activity WHERE datname is not null 
---and client_addr = '172.25.12.116'
+
 group by client_addr
 order by client_addr
 ;
